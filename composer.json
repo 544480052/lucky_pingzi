@@ -1,0 +1,37 @@
+{
+  "name": "wpt/base",
+  "type": "project",
+  "require": {
+    "php": ">=7.0.0",
+    "ramsey/uuid": "^3.5",
+    "ext-redis": "*",
+    "ext-msgpack": "*",
+    "ext-swoole": "~1.9"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app",
+      "Wpt\\": "vendor/wpt/framework"
+    },
+    "files": [
+      "app/Library/Helper.php",
+      "vendor/wpt/framework/Common.php"
+    ]
+  },
+  "scripts": {
+    "post-install-cmd" : ["App\\Library\\Composer::makeIdeHelper"],
+    "post-update-cmd" : ["App\\Library\\Composer::makeIdeHelper"],
+    "post-autoload-dump": ["App\\Library\\Composer::makeIdeHelper"]
+  },
+  "config": {
+    "secure-http": true
+  },
+  "prefer-stable": true,
+  "minimum-stability": "dev",
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://packagist.phpcomposer.com"
+    }
+  }
+}
