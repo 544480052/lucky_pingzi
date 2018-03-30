@@ -34,3 +34,22 @@ if (!function_exists('config')) {
     }
 }
 
+if (!function_exists('get_deep_value')) {
+    /**
+     * 递归获取一个数组中指定key的值
+     * @param        $array
+     * @param        $keys
+     * @param string $delimiter
+     * @return mixed
+     */
+    function get_deep_value($array, $keys, $delimiter = '.')
+    {
+        $keys = explode($delimiter, $keys);
+        $key = array_shift($keys);
+        if (sizeof($keys) > 0 && isset($array[$key])) {
+            return get_deep_value($array[$key], implode($delimiter, $keys), $delimiter);
+        } else {
+            return $array[$key] ?? null;
+        }
+    }
+}
