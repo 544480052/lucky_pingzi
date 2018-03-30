@@ -6,4 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Wpt\\' => array($vendorDir . '/wpt/framework'),
+    'App\\' => array($baseDir . '/app'),
 );
