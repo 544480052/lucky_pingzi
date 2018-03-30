@@ -15,11 +15,10 @@
     "autoload": {
         "psr-4": {
             "App\\": "app",
-            "Wpt\\": "vendor/wpt/framework"
+            "Lib\\": "lib"
         },
         "files": [
-            "app/Library/Helper.php",
-            "vendor/wpt/framework/Common.php"
+            "app/Library/Helper.php"
         ]
     },
     "repositories": {
