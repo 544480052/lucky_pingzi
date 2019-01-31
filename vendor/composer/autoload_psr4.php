@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Wpt\\' => array($vendorDir . '/wpt/framework'),
+    'PhpAmqpLib\\' => array($vendorDir . '/php-amqplib/php-amqplib/PhpAmqpLib'),
+    'Lib\\' => array($baseDir . '/lib'),
     'App\\' => array($baseDir . '/app'),
 );
