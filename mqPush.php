@@ -2,8 +2,8 @@
 /**
  * Created by PhpStorm.
  * User: chengxi
- * Date: 2018/3/30
- * Time: 下午4:23
+ * Date: 2019/1/31
+ * Time: 下午1:36
  */
 
 
@@ -28,9 +28,4 @@ $msg = new AMQPMessage('Hello World!');
 $channel->basic_publish($msg,'','hello');
 
 //$channel->queue_declare('hello', false, false, false, false);
-
-$callback = function($msg) {
-    echo " [x] Received ", $msg->body, "\n";
-};
-$channel->basic_consume('hello', '', false, true, false, false, $callback);
 
