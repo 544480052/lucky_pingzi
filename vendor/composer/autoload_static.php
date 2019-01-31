@@ -8,13 +8,16 @@ class ComposerStaticInitc68f51fee40d7567bf78aa8fe1b9d697
 {
     public static $files = array (
         '5bbbf82d9d58536f7b4c5210531c2f98' => __DIR__ . '/../..' . '/app/Library/Helper.php',
-        '1860226f47a824fd3f334c01d976b82c' => __DIR__ . '/..' . '/wpt/framework/Common.php',
     );
 
     public static $prefixLengthsPsr4 = array (
-        'W' => 
+        'P' => 
         array (
-            'Wpt\\' => 4,
+            'PhpAmqpLib\\' => 11,
+        ),
+        'L' => 
+        array (
+            'Lib\\' => 4,
         ),
         'A' => 
         array (
@@ -23,9 +26,13 @@ class ComposerStaticInitc68f51fee40d7567bf78aa8fe1b9d697
     );
 
     public static $prefixDirsPsr4 = array (
-        'Wpt\\' => 
+        'PhpAmqpLib\\' => 
         array (
-            0 => __DIR__ . '/..' . '/wpt/framework',
+            0 => __DIR__ . '/..' . '/php-amqplib/php-amqplib/PhpAmqpLib',
+        ),
+        'Lib\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/lib',
         ),
         'App\\' => 
         array (
