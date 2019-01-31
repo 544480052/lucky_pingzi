@@ -11,7 +11,7 @@ if (!function_exists('config')) {
     {
         $explode = explode('.', $param);
         $fileName = array_shift($explode);
-        $file = ROOT . '/config/' . $fileName . '.php';
+        $file = ROOT_PATH . '/config/' . $fileName . '.php';
         $globalKey = md5('config');
         $globalSubKey = hash_hmac('md5', $fileName, $fileName);
         if (isset($GLOBALS[$globalKey][$globalSubKey])) {
