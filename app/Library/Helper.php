@@ -53,3 +53,13 @@ if (!function_exists('get_deep_value')) {
         }
     }
 }
+
+
+if (!function_exists('get_micro_time')) {
+
+    function get_micro_time($num = 3)
+    {
+        return (int)str_replace(".", "", sprintf("%.{$num}f", microtime(true)));
+    }
+
+}

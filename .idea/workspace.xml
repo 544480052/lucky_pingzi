@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0216c62a-cc81-4449-b962-12229bd7ef26" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Library/Helper.php" afterPath="$PROJECT_DIR$/app/Library/Helper.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mqPush.php" afterPath="$PROJECT_DIR$/mqPush.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mqSub.php" afterPath="$PROJECT_DIR$/mqSub.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Channel/AMQPChannel.php" afterPath="$PROJECT_DIR$/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Channel/AMQPChannel.php" />
     </list>
     <ignored path="lucky_pingzi.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,27 +28,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="34" selection-end-column="75" />
-              <folding>
-                <element signature="e#6#89#0#PHP" expanded="true" />
-                <element signature="e#141#188#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="mqPush.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mqPush.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+            <state relative-caret-position="285">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding>
                 <element signature="e#6#89#0#PHP" expanded="true" />
-                <element signature="e#141#188#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -52,8 +43,8 @@
       <file leaf-file-name="mqSub.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mqSub.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state relative-caret-position="405">
+              <caret line="27" column="26" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="26" />
               <folding>
                 <element signature="e#6#89#0#PHP" expanded="true" />
                 <element signature="e#140#187#0#PHP" expanded="true" />
@@ -75,8 +66,8 @@
       <file leaf-file-name="AMQPChannel.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Channel/AMQPChannel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1711">
-              <caret line="1140" column="16" selection-start-line="1140" selection-start-column="16" selection-end-line="1140" selection-end-column="16" />
+            <state relative-caret-position="209">
+              <caret line="641" column="20" selection-start-line="641" selection-start-column="20" selection-end-line="641" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -105,8 +96,8 @@
       <file leaf-file-name="AMQPStreamConnection.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPStreamConnection.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+            <state relative-caret-position="15">
+              <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -134,12 +125,13 @@
         <option value="$PROJECT_DIR$/app/Helper/CommonHelper.php" />
         <option value="$PROJECT_DIR$/config/mysql.php" />
         <option value="$PROJECT_DIR$/server.php" />
-        <option value="$PROJECT_DIR$/app/Library/Helper.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/RabbitMq.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/mqPush.php" />
+        <option value="$PROJECT_DIR$/app/Library/Helper.php" />
+        <option value="$PROJECT_DIR$/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Channel/AMQPChannel.php" />
         <option value="$PROJECT_DIR$/mqSub.php" />
+        <option value="$PROJECT_DIR$/mqPush.php" />
       </list>
     </option>
   </component>
@@ -198,6 +190,52 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="lucky_pingzi" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lucky_pingzi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lucky_pingzi" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lucky_pingzi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lucky_pingzi" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lucky_pingzi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lucky_pingzi" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Library" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -298,12 +336,12 @@
       <workItem from="1528373767634" duration="8000" />
       <workItem from="1528374072755" duration="16000" />
       <workItem from="1546581729920" duration="5000" />
-      <workItem from="1548906282588" duration="2807000" />
+      <workItem from="1548906282588" duration="12117000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19017000" />
+    <option name="totallyTimeSpent" value="28327000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
@@ -344,6 +382,37 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Controller/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -379,52 +448,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-          <folding>
-            <element signature="e#6#89#0#PHP" expanded="true" />
-            <element signature="e#141#188#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Controller/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-          <folding>
-            <element signature="e#6#89#0#PHP" expanded="true" />
-            <element signature="e#141#188#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -463,10 +487,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-          <folding>
-            <element signature="e#6#89#0#PHP" expanded="true" />
-            <element signature="e#141#188#0#PHP" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -519,10 +540,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-          <folding>
-            <element signature="e#6#89#0#PHP" expanded="true" />
-            <element signature="e#141#188#0#PHP" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -575,10 +593,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-          <folding>
-            <element signature="e#6#89#0#PHP" expanded="true" />
-            <element signature="e#141#188#0#PHP" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -628,13 +643,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Helper/CommonHelper.php" />
-    <entry file="file://$PROJECT_DIR$/app/Library/Helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/mysql.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -682,14 +690,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPStreamConnection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
@@ -706,17 +706,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="34" selection-end-column="75" />
-          <folding>
-            <element signature="e#6#89#0#PHP" expanded="true" />
-            <element signature="e#141#188#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/AMQPWriter.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
@@ -725,18 +714,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPStreamConnection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Library/Helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="51" column="29" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Channel/AMQPChannel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1711">
-          <caret line="1140" column="16" selection-start-line="1140" selection-start-column="16" selection-end-line="1140" selection-end-column="16" />
+        <state relative-caret-position="209">
+          <caret line="641" column="20" selection-start-line="641" selection-start-column="20" selection-end-line="641" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mqSub.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state relative-caret-position="405">
+          <caret line="27" column="26" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="26" />
           <folding>
             <element signature="e#6#89#0#PHP" expanded="true" />
             <element signature="e#140#187#0#PHP" expanded="true" />
@@ -744,13 +757,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/amqp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="1095" column="20" selection-start-line="1095" selection-start-column="20" selection-end-line="1095" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mqPush.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+        <state relative-caret-position="285">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
             <element signature="e#6#89#0#PHP" expanded="true" />
-            <element signature="e#141#188#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

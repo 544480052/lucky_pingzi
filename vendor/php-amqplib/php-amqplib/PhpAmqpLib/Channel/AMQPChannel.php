@@ -1125,7 +1125,7 @@ class AMQPChannel extends AbstractChannel
      * @param AMQPMessage $msg
      * @param string $exchange
      * @param string $routing_key
-     * @param bool $mandatory
+     * @param bool $mandatory true消息持久化
      * @param bool $immediate
      * @param int $ticket
      */
