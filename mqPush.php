@@ -18,12 +18,13 @@ if (!function_exists('get_micro_time')) {
 
 require_once __DIR__ . "/vendor/autoload.php";
 
+
 $config = [
     "host"     => "127.0.0.1",
     "port"     => 5672,
     "vhost"    => "/",
-    "login"    => "guest",
-    "password" => "guest",
+    "login"    => "cx",
+    "password" => "123456",
 ];
 
 //创建链接
@@ -32,6 +33,7 @@ $connection->connect();
 
 //创建频道
 $channel = new AMQPChannel($connection);
+
 //创建交换机
 $exchange = new AMQPExchange($channel);
 $exchange->setName("test");
@@ -39,27 +41,21 @@ $exchange->setType(AMQP_EX_TYPE_DIRECT);
 $exchange->setFlags(AMQP_DURABLE);
 $exchange->declareExchange();
 
+
 //创建队列
 $queue = new AMQPQueue($channel);
 $queue->setName("hello");
 $queue->setFlags(AMQP_DURABLE);
 $queue->declareQueue();
-$queue->bind("test", "route_key");
+$queue->bind("test", "hello");
+
 
 //生产消息
-$exchange->publish("消息~~~", "route_key");
-
-
-//消费消息
-function callback($envelope, $queue)
-{
-    $msg = $envelope->getBody();
-    echo " [x] Received ", $msg, "\n";
+for ($i = 0; $i < 1; $i++) {
+    $msg = ["code" => 1, "msg" => "success", "data" => []];
+    $exchange->publish(json_encode($msg), "hello", AMQP_NOPARAM, ['content_type' => 'text/plain', 'delivery_mode' => 2]);
 }
 
-while (true) {
-    $queue->consume("callback");
-}
 
 
 

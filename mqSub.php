@@ -8,29 +8,36 @@
 
 require_once __DIR__ . "/vendor/autoload.php";
 
-
-use PhpAmqpLib\Connection\AMQPStreamConnection;
-use PhpAmqpLib\Message\AMQPMessage;
-
 $config = [
     "host"     => "127.0.0.1",
     "port"     => 5672,
-    "user"     => "guest",
-    "password" => "guest",
+    "vhost"    => "/",
+    "login"    => "cx",
+    "password" => "123456",
 ];
 
 //创建链接
-$connection = new AMQPStreamConnection($config["host"], $config["port"], $config["user"], $config["password"]);
-$channel = $connection->channel();
+$connection = new AMQPConnection($config);
+$connection->connect();
+
+//创建频道
+$channel = new AMQPChannel($connection);
 
 
-//接收消息
-$callback = function ($msg) {
-    echo " [x] Received ", $msg->body, "\n";
-};
-$channel->basic_consume('hello', 'test', false, false, false, false, $callback);
+//创建队列
+$queue = new AMQPQueue($channel);
+$queue->setName("hello");
 
-//监听消息
-while (count($channel->callbacks)) {
-    $channel->wait();
+
+//消费消息
+function callback($envelope, $queue)
+{
+    $msg = $envelope->getBody();
+    $envelopeID = $envelope->getDeliveryTag();
+    var_dump(json_decode($msg));
+    $queue->ack($envelopeID);//通知服务端,消息已正确处理,可以删除消息
+}
+
+while (true) {
+    $queue->consume("callback");
 }
