@@ -53,7 +53,8 @@ $queue->bind("test", "hello");
 //生产消息
 for ($i = 0; $i < 1; $i++) {
     $msg = ["code" => 1, "msg" => "success", "data" => []];
-    $exchange->publish(json_encode($msg), "hello", AMQP_NOPARAM, ['content_type' => 'text/plain', 'delivery_mode' => 2]);
+//    $exchange->publish("测试", "hello", AMQP_NOPARAM, ['content_type' => 'text/plain', 'delivery_mode' => 2]);
+    $exchange->publish(json_encode($msg), "hello", AMQP_NOPARAM, ['content_type' => 'application/json', 'delivery_mode' => 2]);
 }
 
 
