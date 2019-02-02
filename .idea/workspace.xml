@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0216c62a-cc81-4449-b962-12229bd7ef26" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mqPush.php" afterPath="$PROJECT_DIR$/mqPush.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mqSub.php" afterPath="$PROJECT_DIR$/mqSub.php" />
     </list>
     <ignored path="lucky_pingzi.iws" />
@@ -28,8 +27,8 @@
       <file leaf-file-name="mqPush.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mqPush.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="44" column="6" selection-start-line="44" selection-start-column="6" selection-end-line="44" selection-end-column="6" />
+            <state relative-caret-position="314">
+              <caret line="41" column="29" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
               <folding>
                 <element signature="e#6#89#0#PHP" expanded="true" />
               </folding>
@@ -41,7 +40,7 @@
         <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/amqp.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="254">
-              <caret line="1095" column="25" selection-start-line="1095" selection-start-column="25" selection-end-line="1095" selection-end-column="25" />
+              <caret line="1095" column="20" selection-start-line="1095" selection-start-column="20" selection-end-line="1095" selection-end-column="20" />
               <folding>
                 <element signature="e#6#108#0#PHP" expanded="true" />
               </folding>
@@ -53,7 +52,7 @@
         <entry file="file://$PROJECT_DIR$/mqSub.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="209">
-              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <caret line="41" column="36" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
               <folding>
                 <element signature="e#6#89#0#PHP" expanded="true" />
               </folding>
@@ -463,12 +462,12 @@
       <workItem from="1528374072755" duration="16000" />
       <workItem from="1546581729920" duration="5000" />
       <workItem from="1548906282588" duration="33445000" />
-      <workItem from="1549074542598" duration="305000" />
+      <workItem from="1549074542598" duration="4232000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49960000" />
+    <option name="totallyTimeSpent" value="53887000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
@@ -509,13 +508,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Controller/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -803,6 +795,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="404">
           <caret line="51" column="29" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -845,10 +838,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_4.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="37" column="23" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/amqp.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="254">
-          <caret line="1095" column="25" selection-start-line="1095" selection-start-column="25" selection-end-line="1095" selection-end-column="25" />
+          <caret line="1095" column="20" selection-start-line="1095" selection-start-column="20" selection-end-line="1095" selection-end-column="20" />
           <folding>
             <element signature="e#6#108#0#PHP" expanded="true" />
           </folding>
@@ -857,8 +858,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mqPush.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="44" column="6" selection-start-line="44" selection-start-column="6" selection-end-line="44" selection-end-column="6" />
+        <state relative-caret-position="314">
+          <caret line="41" column="29" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
           <folding>
             <element signature="e#6#89#0#PHP" expanded="true" />
           </folding>
@@ -868,7 +869,7 @@
     <entry file="file://$PROJECT_DIR$/mqSub.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <caret line="41" column="36" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
           <folding>
             <element signature="e#6#89#0#PHP" expanded="true" />
           </folding>

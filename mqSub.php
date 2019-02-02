@@ -30,7 +30,26 @@ $queue->setName("hello");
 
 
 while (true) {
-    $queue->consume("mq::callback");
+    $queue->consume("call::callback");
+}
+
+
+class call
+{
+
+    static public function callback($envelope, $queue)
+    {
+        $msg = $envelope->getBody();
+        $envelopeID = $envelope->getDeliveryTag();
+
+        $result = call_user_func(["mq", "callback"], $msg);
+
+        if ($result) {
+            $queue->ack($envelopeID);//通知服务端,消息已正确处理,可以删除消息
+        }
+
+    }
+
 }
 
 
@@ -38,12 +57,15 @@ class mq
 {
 
     //消费消息
-    static public function callback($envelope, $queue)
+    public function callback($msg)
     {
-        $msg = $envelope->getBody();
-        $envelopeID = $envelope->getDeliveryTag();
-        var_dump(json_decode($msg));
-        $queue->ack($envelopeID);//通知服务端,消息已正确处理,可以删除消息
+        $msg = json_decode($msg, true);
+        var_dump($msg);
+        if ($msg["code"] == 1) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
 
