@@ -20,6 +20,10 @@ class ComposerStaticInitc68f51fee40d7567bf78aa8fe1b9d697
             'Psr\\Http\\Message\\' => 17,
             'PhpAmqpLib\\' => 11,
         ),
+        'O' => 
+        array (
+            'Overtrue\\Pinyin\\' => 16,
+        ),
         'L' => 
         array (
             'Lib\\' => 4,
@@ -44,6 +48,10 @@ class ComposerStaticInitc68f51fee40d7567bf78aa8fe1b9d697
         'PhpAmqpLib\\' => 
         array (
             0 => __DIR__ . '/..' . '/php-amqplib/php-amqplib/PhpAmqpLib',
+        ),
+        'Overtrue\\Pinyin\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/overtrue/pinyin/src',
         ),
         'Lib\\' => 
         array (
