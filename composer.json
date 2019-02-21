@@ -12,7 +12,8 @@
   "minimum-stability": "beta",
   "require": {
     "php-amqplib/php-amqplib": ">=2.6.1",
-    "guzzlehttp/guzzle": "~6.0"
+    "guzzlehttp/guzzle": "~6.0",
+    "overtrue/pinyin":"~4.0"
   },
   "autoload": {
     "psr-4": {
